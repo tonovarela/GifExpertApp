@@ -9,6 +9,7 @@ export const AddCategory = ({ setCategories}) => {
     const handledSubmit=(e)=>{
         e.preventDefault();        
         if (inputValue.trim().length===0) return;
+        
         setCategories(c=>[inputValue,...c])                
         setInputValue("");
     }
